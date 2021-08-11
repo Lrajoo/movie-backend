@@ -17,6 +17,8 @@ app.get('/api/movies', async (request, response) => {
   response.json(movies.map(movie => movie.toJSON()));
 });
 
-app.listen(config.PORT, () => {
-  console.log(`Server running on port ${config.PORT}`);
+const PORTTOUSE = process.env.PORT || 3001;
+
+app.listen(PORTTOUSE, () => {
+  console.log(`Server running on port ${PORTTOUSE}`);
 });
