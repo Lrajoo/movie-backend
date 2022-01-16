@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "lib": ["es6"],
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
     /* Basic Options */
@@ -67,13 +68,14 @@
 
     /* Advanced Options */
     "skipLibCheck": true /* Skip type checking of declaration files. */,
-    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
+    "forceConsistentCasingInFileNames": false /* Disallow inconsistently-cased references to the same file. */,
     "target": "ES6",
     "outDir": "./build/",
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "types": ["node"]
   }
 }
